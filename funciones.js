@@ -1,10 +1,13 @@
+var contador = 0;
+var tiempo;
+
 function cargar_barra() {
   var barra = document.getElementById("barra");
-  if (barra.value == 100) {barra.value = 0;}
-  barra.value += 1;
+  if (contador == 100) {contador = 0;}
+  contador += 1;
+  barra.style.width = contador + '%';
 }
 
-var tiempo;
 function tiempo() {
   tiempo = setInterval(cargar_barra, 100);
 }

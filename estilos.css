@@ -2,7 +2,7 @@ body {
   background-color: #ecf0f1;
 }
 
-section#wrapper {
+.wrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -12,20 +12,34 @@ section#wrapper {
   text-align: center;
 }
 
-section#contenido {
+.contenido {
   position: absolute;
-  top: 25%;
+  top: 0;
   width: 50%;
   height: 50%;
 }
 
-section#contenido h1 {
-  font-family: "Jokerman";
-  font-size: 5em;
+.titulo {
+  font-family: 'Lobster', cursive;
+  font-size: 6em;
   color: #2c3e50;
 }
 
-progress {
+.container {
   width: 100%;
-  height: 4em;
+  height: 3em;
+  background-color: gray;
+  border-radius: 20px;
+}
+
+.barra {
+  width: 0;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+  border-radius: 20px;
+}
+
+.texto {
+  font-size: 2em;
+  color: #2c3e50;
 }
