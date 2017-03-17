@@ -1,42 +1,73 @@
+/*****************************************
+                  GENERAL
+******************************************/
 body {
-  background-color: #fff;
-  color: #999;
   font-family: 'Lora', serif;
 }
-
 .wrapper {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%;
 }
-
-.logo {
-  text-align: center;
-  margin: 0;
-}
-
 a {
   text-decoration: none;
   color: #4db8ff;
 }
 
+/*****************************************
+                  HEADER
+******************************************/
+.logo {
+  text-align: center;
+  margin: 0;
+}
 header {
   background-color: #80ccff;
   border-color: #33adff;
 }
-
-h1, h2 {
+.titulo, .subtitulo {
   color: #fff;
 }
-
-nav {
+.titulo {
+  font-size: 3em;
+}
+.subtitulo {
+  font-size: 1.5em;
+  margin-top: -25px; 
+}
+.menu {
   background-color: #33adff;
 }
-
-nav a, nav a:visited {
+.menu__link, .menu__link:visited {
   color: #fff;
 }
-
-nav a.selected, a:hover {
+.menu__link.selected, .menu__link:hover {
   color: #008ae6;
+}
+
+/*****************************************
+                  PRINCIPAL
+******************************************/
+
+
+
+
+
+/*****************************************
+                  FOOTER
+******************************************/
+footer {
+  background-color: #d9d9d9;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer__icon {
+  font-size: 3em;
+  margin: 5px;
+}
+.footer__icon:hover {
+  color: blue;
+}
+.footer__label {
+  font-size: 1.1em;
 }
