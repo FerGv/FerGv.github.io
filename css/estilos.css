@@ -3,20 +3,24 @@
 ******************************************/
 body {
   font-family: 'Lora', serif;
+  text-align: center;
 }
 .wrapper {
   background-color: #d9d9d9;
-  text-align: center;
   max-width: 940px;
   margin: 0 auto;
   padding: 0 5%;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 a {
   text-decoration: none;
-  color: #4db8ff;
 }
 a:hover {
-  color: blue;
+    color: blue;
 }
 img {
   max-width: 100%;
@@ -27,41 +31,47 @@ img {
 ******************************************/
 header {
   background-color: #80ccff;
-  border-color: #33adff;
 }
 .logo {
-  text-align: center;
   margin: 0;
 }
 .title, .subtitle {
   color: #fff;
   font-weight: bold;
+  margin: 0;
 }
 .title {
   font-size: 3em;
+  padding-top: 5px;
 }
 .subtitle {
   font-size: 1.5em;
-  margin-top: -25px;
+  padding-bottom: 10px;
 }
 .menu {
   background-color: #33adff;
 }
 .menu__link, .menu__link:visited {
+  display: block;
   color: #fff;
+}
+.menu__item {
+    display: inline-block;
+}
+.menu__link {
+    padding: 20px;
 }
 .menu__link.selected{
   color: blue;
+}
+.menu__link:hover {
+    background-color: #2980b9;
+    color: #fff;
 }
 
 /*****************************************
                   PRINCIPAL
 ******************************************/
-.gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 .gallery__item {
   float: left;
   width: 45%;
@@ -84,6 +94,7 @@ footer {
 .footer__icon {
   font-size: 3em;
   margin: 5px;
+  color: rgba(0, 0, 255, 0.5);
 }
 .footer__label {
   font-size: 1.1em;
