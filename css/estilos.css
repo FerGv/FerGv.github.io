@@ -100,7 +100,16 @@ header {
                   CONTACTO
 ******************************************/
 .contact-info {
-  
+  display: flex;
+  justify-content: space-around;
+}
+.contact-info__item {
+  width: 30%;
+  padding: 5px;
+}
+.contact-info__icon {
+  margin-right: 5px;
+  font-size: 1.2em;
 }
 
 /*****************************************
@@ -110,6 +119,7 @@ footer {
   text-align: center;
   padding-top: 20px;
   clear: both;
+  margin-top: 5em;
 }
 .footer__icon {
   font-size: 3em;
