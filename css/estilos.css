@@ -3,6 +3,7 @@
 ******************************************/
 * {
   transition: .8s;
+  box-sizing: border-box;
 }
 body {
   font-family: 'Lora', serif;
@@ -56,23 +57,24 @@ header {
 }
 .menu {
   background-color: #33adff;
+  font-size: 1.1em;
 }
 .menu__link, .menu__link:visited {
   display: block;
   color: #fff;
 }
 .menu__item {
-    display: inline-block;
+  display: inline-block;
 }
 .menu__link {
-    padding: 20px;
+  padding: 20px;
 }
 .menu__link.selected{
   color: blue;
 }
 .menu__link:hover {
-    background-color: #2980b9;
-    color: #fff;
+  background-color: #2980b9;
+  color: #fff;
 }
 
 /*****************************************
@@ -80,7 +82,7 @@ header {
 ******************************************/
 .gallery__item {
   float: left;
-  width: 45%;
+  width: 100%;
   margin: 2.5%;
   color: #bdc3c7;
 }

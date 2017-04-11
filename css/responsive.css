@@ -1,13 +1,23 @@
-@media all and (max-width: 660px) {
+@media all and (max-width: 480px) {
+  /*****************************************
+                  GENERAL
+    ******************************************/
+    .menu__item {
+      display: block;
+      font-size: 1.2em;
+    }
+    .menu__link {
+      padding: 10px;
+    }
+}
+
+@media all and (min-width: 660px) {
     /*****************************************
                   PORTAFOLIO
     ******************************************/
     .gallery__item {
-      width: 100%;
+      width: 45%;
     }
-}
-
-@media all and (min-width: 480px) {
     /*****************************************
                   CONTACTO
     ******************************************/
