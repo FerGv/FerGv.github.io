@@ -2,7 +2,9 @@
                   GENERAL
 ******************************************/
 * {
-  transition: .8s;
+  margin: 0;
+  padding: 0;
+  transition: all .5s;
   box-sizing: border-box;
 }
 body {
@@ -10,29 +12,23 @@ body {
   text-align: center;
 }
 .wrapper {
-  /*background-color: #d9d9d9;*/
   max-width: 940px;
   margin: 0 auto;
   padding: 20px 5% 0;
 }
 ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 a {
   text-decoration: none;
 }
-a:hover {
-    color: blue;
-}
 img {
   max-width: 100%;
+  height: 100%;
 }
 h3 {
   margin: 0 0 1em 0;
 }
-
 /*****************************************
                   HEADER
 ******************************************/
@@ -70,34 +66,54 @@ header {
   padding: 20px;
 }
 .menu__link.selected{
-  color: blue;
+  background-color: #2980b9;
 }
 .menu__link:hover {
   background-color: #2980b9;
   color: #fff;
 }
-
 /*****************************************
                   PRINCIPAL
 ******************************************/
 .gallery__item {
+  position: relative;
   float: left;
   width: 100%;
+  height: 300px;
   margin: 2.5%;
-  color: #bdc3c7;
+  overflow: hidden;
+  padding: 1%;
+  border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 3px 3px rgba(0,0,0,0.6);
 }
-.description {
-  margin: 0;
-  padding: 5%;
+.project__title {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 5px;
+  left: 5px;
+  width: 0;
+  height: 0;
+  background: rgba(0,0,0,.9);
 }
-
+.project__title span {
+  align-self: center;
+  font-size: 0;
+  color: #fff;
+}
+.gallery__item:hover .project__title {
+  width: 97%;
+  height: 97%;
+}
+.gallery__item:hover .project__title span {
+  font-size: 2em;
+}
 /*****************************************
                   ACERCA DE
 ******************************************/
 .profile-photo {
   font-size: 7em;
 }
-
 /*****************************************
                   CONTACTO
 ******************************************/
@@ -108,7 +124,6 @@ header {
   margin-right: 5px;
   font-size: 1.2em;
 }
-
 /*****************************************
                   FOOTER
 ******************************************/

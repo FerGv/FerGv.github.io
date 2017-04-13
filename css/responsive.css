@@ -29,6 +29,12 @@
         width: 40%;
         float: right;
     }
+    /*****************************************
+                  PRINCIPAL
+    ******************************************/
+    .gallery__item:hover .project__title span {
+      font-size: 1.8em;
+    }
 }
 
 @media all and (min-width: 1440px) {
@@ -36,6 +42,12 @@
                   PORTAFOLIO
     ******************************************/
     .gallery__item {
-      width: 28%;
+      width: 40%;
+    }
+    /*****************************************
+                  PRINCIPAL
+    ******************************************/
+    .gallery__item:hover .project__title span {
+      font-size: 2em;
     }
 }
