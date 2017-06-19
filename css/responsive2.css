@@ -1,0 +1,21 @@
+@media all and (min-width: 659px) {
+    .main__text--title {
+        border-bottom: none;
+        border-right: 6px solid #fff;
+        padding-right: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media all and (min-width: 970px) {
+    .main__text--title {
+        font-size: 10em;
+    }
+    .main__text--subtitle {
+        font-size: 5em;
+    }
+}
+
+@media all and (min-width: 1170px) {
+    
+}
