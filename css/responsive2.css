@@ -14,8 +14,13 @@
     .main__text--subtitle {
         font-size: 5em;
     }
+    .gallery__item {
+        margin-right: 5px;
+    }
+    .gallery__item:hover .gallery__item--title {
+        font-size: 2em;
+    }
 }
 
 @media all and (min-width: 1170px) {
-    
 }
