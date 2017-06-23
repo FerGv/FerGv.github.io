@@ -3,56 +3,47 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>José Fernando García Vázquez | Web Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700">
-    <link rel="stylesheet" href="fonts/flaticon.css">
+    <title>FerGv | Web Developer</title>
+    <link href="https://file.myfontastic.com/hHBpfMk45ZXGS7AyiWen/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
-    <header>
-      <a href="index.html" class="logo">
-        <h1 class="title">FerGv</h1>
-        <h2 class="subtitle">Web Developer</h2>
-      </a>
-      <nav class="menu">
-        <ul>
-          <li class="menu__item"><a href="index.html" class="menu__link selected">Portafolio</a></li>
-          <li class="menu__item"><a href="templates/acerca.html" class="menu__link">Acerca de</a></li>
-          <li class="menu__item"><a href="templates/contacto.html" class="menu__link">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <section class="wrapper">
-        <ul class="gallery">
-          <li class="gallery__item">
-            <img src="img/cafeteria.jpg" alt="Cafeteria (PHP)">
-            <a href="img/cafeteria.jpg" class="project__title"><span>Cafeteria <br> (PHP)</span></a>
-          </li>
+    <div class="wrapper">
+        <div class="main">
+            <div class="main__image">
+                <img src="img/fondo.jpg" alt="fondo" class="main__image--img">
+            </div>
+            <div class="main__text">
+                <h1 class="main__text--title text-center">FerGv</h1>
+                <h2 class="main__text--subtitle text-center">Web Developer</h2>
+            </div>
+        </div>
+        <div class="gallery">
+          <div class="gallery__title"><h3 class="gallery__title--text">PROYECTOS</h3></div>
+          <div class="gallery__item">
+            <img src="img/cafeteria.jpg" alt="Cafeteria (PHP)" class="gallery__item--img">
+            <a href="https://github.com/FerGv/SGI" class="gallery__item--title">Cafetería (PHP)</a>
+          </div>
+          <div class="gallery__item">
+            <img src="img/cafeteria2.jpg" alt="Cafeteria (Visual C#)" class="gallery__item--img">
+            <a href="https://github.com/FerGv/Cafeteria-CS" class="gallery__item--title">Cafetería (Visual C#)</a>
+          </div>
+          <div class="gallery__item">
+            <img src="img/analizador.jpg" alt="Analizador Léxico (Python)" class="gallery__item--img">
+            <a href="https://github.com/FerGv/Analizador-Lexico" class="gallery__item--title">Analizador Léxico (Python)</a>
+          </div>
+          <div class="gallery__item">
+            <img src="img/biblioteca.png" alt="Biblioteca Virtual (Python)" class="gallery__item--img">
+            <a href="https://github.com/FerGv/Biblioteca-Virtual" class="gallery__item--title">Biblioteca Virtual (Python)</a>
+          </div>
+        </div>
+    </div>
 
-          <li class="gallery__item">
-            <img src="img/cafeteria2.jpg" alt="Cafeteria (Visual C#)">
-            <a href="img/cafeteria.jpg" class="project__title"><span>Cafeteria <br> (Visual C#)</span></a>
-          </li>
-
-          <li class="gallery__item">
-            <img src="img/analizador.jpg" alt="Analizador Léxico (Python)">
-            <a href="img/cafeteria.jpg" class="project__title"><span>Analizador Léxico <br> (Python)</span></a>
-          </li>
-
-          <li class="gallery__item">
-            <img src="img/biblioteca.png" alt="Biblioteca Virtual (Python)">
-            <a href="img/cafeteria.jpg" class="project__title"><span>Biblioteca Virtual <br> (Python)</span></a>
-          </li>
-        </ul>
-    </section>
-
-    <footer>
-      <a href="" class="footer__icon"><i class="flaticon-github-social-logo"></i></a>
-      <a href="" class="footer__icon"><i class="flaticon-twitter-circular-button"></i></a>
-      <a href="" class="footer__icon"><i class="flaticon-facebook-logo-in-circular-button-outlined-social-symbol"></i></a>
+    <footer class="footer">
+      <a href="#" class="footer__icon"><i class="icon-twitter"></i></a>
+      <a href="https://github.com/FerGv" class="footer__icon"><i class="icon-github"></i></a>
+      <a href="#" class="footer__icon"><i class="icon-facebook"></i></a>
       <p class="footer__label">&copy; 2017 FerGv</p>
     </footer>
   </body>
