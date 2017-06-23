@@ -1,9 +1,22 @@
-@media all and (min-width: 659px) {
+@media all and (min-width: 700px) {
     .main__text--title {
         border-bottom: none;
         border-right: 6px solid #fff;
         padding-right: 20px;
         margin-right: 20px;
+    }
+    .gallery {
+        flex-direction: row;
+        width: 95%;
+    }
+    .gallery__title {
+        flex-basis: 100%;
+    }
+    .gallery__item {
+        flex-basis: 45%;
+    }
+    .gallery__item:hover .gallery__item--title {
+        font-size: 2em;
     }
 }
 
@@ -15,10 +28,7 @@
         font-size: 5em;
     }
     .gallery__item {
-        margin-right: 5px;
-    }
-    .gallery__item:hover .gallery__item--title {
-        font-size: 2em;
+        flex-basis: 32%;
     }
 }
 
