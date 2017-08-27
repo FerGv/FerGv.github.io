@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FerGv | Web Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
-    <link href="https://file.myfontastic.com/WHDo9QG48c8NBeTtijU6z5/icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" />
+    <link href="https://file.myfontastic.com/WHDo9QG48c8NBeTtijU6z5/icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/media_queries.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -16,56 +17,131 @@
                 <img src="img/fondo.jpg" alt="fondo" class="main__image--img">
             </div>
             <div class="main__text">
-                <h1 class="main__text--title text-center">FerGv</h1>
-                <h2 class="main__text--subtitle text-center">Web Developer</h2>
+                <h1 class="main__text--title">FerGv</h1>
+                <h2 class="main__text--subtitle">Web Developer</h2>
             </div>
         </div>
-        <div class="gallery">
-          <div class="gallery__title"><h3 class="gallery__title--text">PROYECTOS</h3></div>
-          <div class="gallery__item">
-            <img src="img/cafeteria.jpg" alt="Cafeteria (PHP)" class="gallery__item--img">
-            <a href="https://github.com/FerGv/SGI" class="gallery__item--title">Cafetería (PHP)</a>
+        <div class="gallery columns is-multiline is-centered">
+          <div class="column is-12"><h3 class="gallery__title--text">PROYECTOS</h3></div>
+          <div class="column is-half-tablet is-one-third-desktop is-one-quarter-fullhd">
+            <div class="card">
+              <a href="https://github.com/FerGv/SGI">
+                <div class="card-image">
+                  <div class="image is-4by3">
+                    <img src="img/cafeteria.jpg" alt="Cafeteria (PHP)" />
+                  </div>
+                </div>
+                <div class="card-content has-text-centered">
+                  <p class="title">Cafetería</p>
+                  <p class="subtitle">PHP</p>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="gallery__item">
-            <img src="img/cafeteria2.jpg" alt="Cafeteria (Visual C#)" class="gallery__item--img">
-            <a href="https://github.com/FerGv/Cafeteria-CS" class="gallery__item--title">Cafetería (Visual C#)</a>
+          <div class="column is-half-tablet is-one-third-desktop is-one-quarter-fullhd">
+            <div class="card">
+              <a href="https://github.com/FerGv/Cafeteria-CS">
+                <div class="card-image">
+                  <div class="image is-4by3">
+                    <img src="img/cafeteria2.jpg" alt="Cafeteria (Visual C#)" />
+                  </div>
+                </div>
+                <div class="card-content has-text-centered">
+                  <p class="title">Cafetería</p>
+                  <p class="subtitle">Visual C#</p>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="gallery__item">
-            <img src="img/analizador.png" alt="Analizador Léxico (Python)" class="gallery__item--img">
-            <a href="https://github.com/FerGv/Analizador-Lexico" class="gallery__item--title">Analizador Léxico (Python)</a>
+          <div class="column is-half-tablet is-one-third-desktop is-one-quarter-fullhd">
+            <div class="card">
+              <a href="https://github.com/FerGv/Analizador-Lexico">
+                <div class="card-image">
+                  <div class="image is-4by3">
+                    <img src="img/analizador.png" alt="Analizador Léxico (Python)" />
+                  </div>
+                </div>
+                <div class="card-content has-text-centered">
+                  <p class="title">Analizador Léxico</p>
+                  <p class="subtitle">Python</p>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="gallery__item">
-            <img src="img/biblioteca.png" alt="Biblioteca Virtual (Python)" class="gallery__item--img">
-            <a href="https://github.com/FerGv/Biblioteca-Virtual" class="gallery__item--title">Biblioteca Virtual (Python)</a>
+          <div class="column is-half-tablet is-one-third-desktop is-one-quarter-fullhd">
+            <div class="card">
+              <a href="https://github.com/FerGv/Biblioteca-Virtual">
+                <div class="card-image">
+                  <div class="image is-4by3">
+                    <img src="img/biblioteca.png" alt="Biblioteca Virtual (Python)" />
+                  </div>
+                </div>
+                <div class="card-content has-text-centered">
+                  <p class="title">Biblioteca Virtual</p>
+                  <p class="subtitle">Python</p>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="gallery__item">
-            <img src="img/veterinaria.jpg" alt="Veterinaria (PHP)" class="gallery__item--img">
-            <a href="https://github.com/FerGv/Veterinaria" class="gallery__item--title">Veterinaria (PHP)</a>
+          <div class="column is-half-tablet is-one-third-desktop is-one-quarter-fullhd">
+            <div class="card">
+              <a href="https://github.com/FerGv/Veterinaria">
+                <div class="card-image">
+                  <div class="image is-4by3">
+                    <img src="img/veterinaria.jpg" alt="Veterinaria (PHP)" />
+                  </div>
+                </div>
+                <div class="card-content has-text-centered">
+                  <p class="title">Veterinaria</p>
+                  <p class="subtitle">PHP</p>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="gallery__item">
-            <img src="img/estadistica.jpg" alt="Distribuidor Muestral de Medias (Python)" class="gallery__item--img">
-            <a href="https://github.com/FerGv/Distribucion-Muestral-de-Medias" class="gallery__item--title">Distribución Muestral de Medias (Python)</a>
+          <div class="column is-half-tablet is-one-third-desktop is-one-quarter-fullhd">
+            <div class="card">
+              <a href="https://github.com/FerGv/Distribucion-Muestral-de-Medias">
+                <div class="card-image">
+                  <div class="image is-4by3">
+                    <img src="img/estadistica.jpg" alt="Distribuidor Muestral de Medias (Python)" />
+                  </div>
+                </div>
+                <div class="card-content has-text-centered">
+                  <p class="title">Distribuidor Muestral de Medias</p>
+                  <p class="subtitle">Python</p>
+                </div>
+              </a>
+            </div>
           </div>
+          <div class="column is-half-tablet is-one-third-desktop is-one-quarter-fullhd">
+              <div class="card">
+                <a href="https://github.com/FerGv/Numeros-Aleatorios">
+                  <div class="card-image">
+                    <div class="image is-4by3">
+                      <img src="img/numeros.jpg" alt="Números Aleatorios (Python)" />
+                    </div>
+                  </div>
+                  <div class="card-content has-text-centered">
+                    <p class="title">Números Aleatorios</p>
+                    <p class="subtitle">Python</p>
+                  </div>
+                </a>
+              </div>
+            </div>
         </div>
         <div class="info">
-          <h3>ACERCA DE MÍ</h3><br>
-
+          <h3 class="title is-3 has-text-white-bis">ACERCA DE MÍ</h3>
           <p>Soy estudiante de la Licenciatura en Ciencias de la Informática en la Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas (UPIICSA). Me gusta la programación, en especial el desarrollo web, y me integro fácilmente a los equipos de trabajo.</p>
-
-          <br><br><br>
-
-          <h3>CONTACTO</h3><br>
-
+          <br /><br />
+          <h3 class="title is-3 has-text-white-bis">CONTACTO</h3>
           <a href="mailto:jfer.garciav@gmail.com" class="contact__item"><i class="icon-email contact__item--icon"></i>jfer.garciav@gmail.com</a>
           <br>
           <a href="tel:5537592020" class="contact__item"><i class="icon-phone contact__item--icon"></i>5537592020</a>
         </div>
     </div>
-
     <footer class="footer">
-      <a href="#" class="footer__icon"><i class="icon-twitter"></i></a>
       <a href="https://github.com/FerGv" class="footer__icon"><i class="icon-github"></i></a>
-      <a href="#" class="footer__icon"><i class="icon-facebook"></i></a>
+      <a href="http://www.linkedin.com/in/jose-fernando-garcia-vazquez" class="footer__icon"><i class="icon-linkedin"></i></a>
       <p class="footer__label">&copy; 2017 FerGv</p>
     </footer>
   </body>
