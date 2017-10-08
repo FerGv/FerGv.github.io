@@ -84,9 +84,14 @@ a:checked {
     color: #2c3e50;
     text-align: center;
 }
-.card:hover .title,
-.card:hover .subtitle {
+.front { z-index: 1; }
+.front:hover,
+.front:hover .title,
+.front:hover .subtitle {
     color: hsl(171, 100%, 41%);
+}
+.back {
+    display: none;
 }
 /*********************************************************
             INFO
