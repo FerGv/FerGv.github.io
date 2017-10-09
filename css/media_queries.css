@@ -10,16 +10,16 @@
     .gallery__title--text { font-size: 4em; }
     .description { display: none; }
     .front:hover,
-	.front:hover .title,
-	.front:hover .subtitle {
+    .front:hover .title,
+    .front:hover .subtitle {
 	    color: #000;
 	}
     .card-container { 
-		position: relative;
-		border: 1px solid rgba(0,0,0,0.1);
-		transform-style: preserve-3d;
-		transform: perspective(600px) rotateY(0deg);
-    	transition: all 0.5s;
+        position: relative;
+        border: 1px solid rgba(0,0,0,0.1);
+        transform-style: preserve-3d;
+        transform: perspective(600px) rotateY(0deg);
+        transition: all 0.5s;
 	 }
     .back {
     	display: block;

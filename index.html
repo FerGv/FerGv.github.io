@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./img/icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/icon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png" />
     <link rel="shortcut icon" type="image/x-icon" href="./img/icon/favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" />
     <link href="https://file.myfontastic.com/WHDo9QG48c8NBeTtijU6z5/icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css" />
-    <link rel="stylesheet" href="./css/estilos.css" />
-    <link rel="stylesheet" href="./css/media_queries.css" />
+    <link rel="stylesheet" href="./css/estilos.min.css" />
+    <link rel="stylesheet" href="./css/media_queries.min.css" />
     <title>FerGv | Web Developer</title>
   </head>
   <body>
@@ -20,14 +21,14 @@
             <div class="main__image">
                 <img src="./img/wallpaper.jpg" alt="fondo" class="main__image--img">
             </div>
-            <div class="main__text">
+            <div class="main__text animated delay-1 bounceInUp">
                 <h1 class="main__text--title">FerGv</h1>
                 <h2 class="main__text--subtitle">Web Developer</h2>
             </div>
         </div>
-        <div class="gallery columns is-multiline is-centered">
+        <div class="gallery columns is-multiline is-centered aniview" data-av-animation="bounceInUp">
           <div class="column is-12"><h3 class="gallery__title--text">PROYECTOS</h3></div>
-          <!-- COFFE SHOP (PHP) -->
+          <!-- COFFEE SHOP (PHP) -->
           <div class="column is-half-tablet is-one-third-desktop is-one-quarter-fullhd container">
             <a href="https://github.com/FerGv/SGI"> 
               <div class="card-container">
@@ -261,7 +262,7 @@
           </div>
         </div>
         <!-- CONTACT -->
-        <div class="info">
+        <div class="info aniview" data-av-animation="bounceInUp">
           <h3 class="title is-3 has-text-white-bis">ACERCA DE MÍ</h3>
           <p>Soy estudiante de la Licenciatura en Ciencias de la Informática en la Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas (UPIICSA). Me gusta la programación, en especial el desarrollo web, y me integro fácilmente a los equipos de trabajo.</p>
           <br /><br />
@@ -271,10 +272,20 @@
           <a href="tel:5537592020" class="contact__item"><i class="icon-phone contact__item--icon"></i>5537592020</a>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer aniview" data-av-animation="bounceInUp">
       <a href="https://github.com/FerGv" class="footer__icon"><i class="icon-github"></i></a>
       <a href="http://www.linkedin.com/in/jose-fernando-garcia-vazquez" class="footer__icon"><i class="icon-linkedin"></i></a>
       <p class="footer__label">&copy; 2017 FerGv</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+    <script>
+      var options = {
+          animateThreshold: 50,
+          scrollPollInterval: 20
+      }
+      $('.aniview').AniView(options);
+    </script>
   </body>
 </html>
