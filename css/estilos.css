@@ -19,9 +19,7 @@ a,
 a:hover,
 a:link,
 a:active,
-a:checked {
-    text-decoration: none;
-}
+a:checked { text-decoration: none; }
 /*********************************************************
             MAIN
 *********************************************************/            
@@ -58,9 +56,7 @@ a:checked {
     color: #fff;
 }
 .main__text--title,
-.main__text--subtitle {
-    font-weight: bold;
-}
+.main__text--subtitle { font-weight: bold; }
 
 .main__text--title {
     font-size: 6em;
@@ -68,12 +64,8 @@ a:checked {
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
-.main__text--subtitle {
-    font-size: 2.5em;
-}
-.delay-1 {
-    transition-delay: 1s;
-}
+.main__text--subtitle { font-size: 2.5em; }
+.delay-1 { transition-delay: 1s; }
 /*********************************************************
             GALLERY
 *********************************************************/ 
@@ -90,12 +82,8 @@ a:checked {
 .front { z-index: 1; }
 .front:hover,
 .front:hover .title,
-.front:hover .subtitle {
-    color: hsl(171, 100%, 41%);
-}
-.back {
-    display: none;
-}
+.front:hover .subtitle { color: hsl(171, 100%, 41%); }
+.back { display: none; }
 /*********************************************************
             INFO
 *********************************************************/ 
@@ -106,22 +94,18 @@ a:checked {
     text-align: center;
     font-size: 1.5em;
 }
-.contact__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
-.contact__item {
+.contact__item i, 
+.contact__item p { 
+    display: inline-block; 
     color: #fff;
-
     transition: all .5s;
 }
-.contact__item:hover {
+.contact__item:hover i,
+.contact__item:hover p { 
     color: black;
+    transform: scale(1.2,1.2);
 }
+.contact__item:hover i { transform: rotate(360deg); }
 /*********************************************************
             FOOTER
 *********************************************************/ 
@@ -132,6 +116,7 @@ a:checked {
     background-color: lightgray;
 }
 .footer__icon {
+    display: inline-block;
     font-size: 3em;
     color: rgba(0, 0, 0, 0.4);
     margin: 0 3px;
@@ -140,8 +125,10 @@ a:checked {
 }
 .footer__icon:hover {
     color: rgba(0, 0, 0, 1);
+    transform: rotate(360deg) scale(1.2, 1.2);
 }
+.icon-linkedin:hover { color: #0077B5; }
 .footer__label {
     font-size: 1.5em;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.8);
 }

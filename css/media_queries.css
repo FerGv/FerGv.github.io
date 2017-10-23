@@ -49,4 +49,9 @@
 		box-shadow: 0 0 10px #000;
 		transform: perspective(600px) rotateY(180deg);
     }
+    /*********************************************************
+                CONTACT
+    *********************************************************/
+    .contact__item:hover i { transform: scale(2,2) rotate(360deg); }
+    .contact__item:hover p { transform: scale(2,2); }
 }
