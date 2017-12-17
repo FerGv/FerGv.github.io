@@ -27,18 +27,12 @@ a:checked { text-decoration: none; }
     height: 100vh;
     width: 100%;
     position: relative;
-}
-.main__image {
-    height: 100%;
-    z-index: 1;
-    background-color: #2980b9;
-}
-.main__image--img {
-    height: 100%;
-    width: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    filter: opacity(40%);
+    background-image: url(../img/wallpaper.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: #446CB3;
+    background-blend-mode: soft-light;
 }
 .main__text {
     height: 100%;
