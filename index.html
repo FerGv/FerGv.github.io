@@ -24,7 +24,10 @@
           </div>
         </div>
         <div class="gallery columns is-multiline is-centered aniview" data-av-animation="bounceInUp">
-          <div class="column is-12"><h3 class="gallery__title--text">PROYECTOS</h3></div>
+          <div class="column is-12 has-text-centered">
+            <h3 class="gallery__title--text">PROYECTOS</h3>
+            <p>(Links a repositorios de código)</p>
+          </div>
           <!-- ESCUELA FIT (PYTHON) -->
           <div class="column is-half-tablet is-one-third-desktop is-one-quarter-fullhd container">
             <a href="https://github.com/e-mind/Escuela-Fit"> 
@@ -316,7 +319,7 @@
     <footer class="footer aniview" data-av-animation="bounceInUp">
       <a href="https://github.com/FerGv" class="footer__link"><i class="icon-github footer__icon"></i></a>
       <a href="https://www.linkedin.com/in/jose-fernando-garcia-vazquez" class="footer__link"><i class="icon-linkedin footer__icon"></i></a>
-      <p class="footer__label">&copy; 2017 FerGv</p>      
+      <p class="footer__label">&copy; <span id="year"></span> FerGv</p>      
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -327,10 +330,9 @@
           scrollPollInterval: 20
       }
       $('.aniview').AniView(options);
-    </script>
-    <!-- Hotjar Tracking Code for https://fergv.github.io/ -->
-    <script>
-        (function(h,o,t,j,a,r){
+
+      // Hotjar Tracking Code for https://fergv.github.io/
+      (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:839817,hjsv:6};
             a=o.getElementsByTagName('head')[0];
@@ -338,6 +340,8 @@
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+      $('#year').html((new Date()).getFullYear()); 
     </script>
   </body>
 </html>
