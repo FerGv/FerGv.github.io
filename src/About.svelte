@@ -1,3 +1,18 @@
+<script>
+  const contactLinks = [
+    {
+      text: '(+52) 55 3759 2020',
+      link: 'tel:5537592020',
+      icon: 'phone',
+    },
+    {
+      text: 'jfer.garciav@gmail.com',
+      link: 'mailto:jfer.garciav@gmail.com',
+      icon: 'envelope',
+    },
+  ]
+</script>
+
 <header class="flex flex-col md:flex-row justify-center items-center py-5">
   <img
     src="https://avatars2.githubusercontent.com/u/10598981?s=460&u=834eb543ae75b8fe7d4b332672870741f0f1d036&v=4"
@@ -26,8 +41,13 @@
 
     <p>Saludos :D</p>
 
-    <p class="text-green-500 text-center"><i class="fas fa-phone fa-fw" /> (+52) 55 3759 2020</p>
-
-    <p class="text-green-500 text-center"><i class="fas fa-envelope fa-fw" /> jfer.garciav@gmail.com</p>
+    {#each contactLinks as {text, link, icon}}
+      <p class="text-center my-3">
+        <a class="text-green-500 text-center inline-block transform hover:scale-125" href={link} target="_blank">
+          <i class="fas fa-{icon} fa-fw" />
+          {text}
+        </a>
+      </p>
+    {/each}
   </section>
 </header>
