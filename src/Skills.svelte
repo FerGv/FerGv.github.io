@@ -39,7 +39,7 @@
       iconColor: 'blue-800',
       stars: 3,
     },
-  ]
+  ];
 </script>
 
 <style>
