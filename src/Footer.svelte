@@ -12,7 +12,7 @@
   ];
 </script>
 
-<footer class="bg-gray-900 text-white text-center py-5">
+<footer class="bg-gray-900 text-white text-center py-10">
   <section>
     {#each socialIcons as socialIcon}
       <a href={socialIcon.link} target="_blank">

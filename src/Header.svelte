@@ -12,9 +12,8 @@
   }
 </style>
 
-<header
-  class="bg-gray-700 text-center min-h-screen flex flex-col justify-center">
-  <section class="name py-10">
+<header class="bg-gray-700 text-center min-h-screen flex flex-col justify-center">
+  <section class="name py-20">
     <h1 class="text-5xl">Fernando García</h1>
 
     <hr class="w-1/2 m-auto my-3 border-2 border-black" />
