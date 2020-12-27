@@ -55,7 +55,7 @@
 <section class="py-10 px-5">
   <h3 class="text-white font-bold text-3xl text-center border mb-4">Habilidades</h3>
 
-  <section class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+  <section class="grid grid-cols-2 sm:grid-cols-3 gap-3">
     {#each skills as {name, icon, iconColor, stars}}
       <SkillCard {name} {icon} {iconColor} {stars} />
     {/each}
