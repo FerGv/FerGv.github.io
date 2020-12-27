@@ -5,7 +5,7 @@
   export let stars;
 </script>
 
-<article class="flex flex-col bg-white text-center py-5 rounded">
+<article class="flex flex-col bg-white text-center py-5 rounded transform hover:scale-90">
   <p>
     <i class="fab fa-{icon} fa-fw text-{iconColor} text-4xl" />
   </p>
