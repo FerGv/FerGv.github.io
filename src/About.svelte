@@ -1,6 +1,3 @@
-<style>
-</style>
-
 <header class="flex flex-col md:flex-row justify-center items-center py-5">
   <img
     src="https://avatars2.githubusercontent.com/u/10598981?s=460&u=834eb543ae75b8fe7d4b332672870741f0f1d036&v=4"
@@ -20,7 +17,7 @@
     <br />
 
     <p>
-      Te dejo mi contacto por si gustas charlar o contar un buen chiste. Debajo
+      Te dejo mi contacto por si gustas charlar. Debajo
       podrás encontrar algunos de mis proyectos y otras cosas interesantes sobre
       mí.
     </p>

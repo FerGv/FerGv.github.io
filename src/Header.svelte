@@ -15,10 +15,10 @@
 <header
   class="bg-gray-700 text-center min-h-screen flex flex-col justify-center">
   <section class="name py-10">
-    <p class="text-5xl">Fernando García</p>
+    <h1 class="text-5xl">Fernando García</h1>
 
     <hr class="w-1/2 m-auto my-3 border-2 border-black" />
 
-    <p class="text-2xl">Desarrollador</p>
+    <h2 class="text-2xl">Desarrollador</h2>
   </section>
 </header>
