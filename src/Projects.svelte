@@ -53,13 +53,16 @@
   }
 </script>
 
-<section class="py-10 px-5 bg-gray-400">
+<section class="py-10 sm:px-5 bg-gray-400">
   <h3 class="font-bold text-3xl text-center border border-black mb-4">
     Proyectos
   </h3>
 
-  <section class="flex">
-    <div class="flex flex-col justify-center cursor-pointer hover:bg-gray-200" on:click={lastProject}>
+  <section class="flex justify-center">
+    <div
+      class="flex flex-col justify-center cursor-pointer hover:bg-gray-200"
+      on:click={lastProject}
+    >
       <i class="fas fa-chevron-left fa-fw text-4xl" />
     </div>
 
@@ -70,7 +73,10 @@
       title={projects[projectIndex].title}
     />
 
-    <div class="flex flex-col justify-center cursor-pointer hover:bg-gray-200" on:click={nextProject}>
+    <div
+      class="flex flex-col justify-center cursor-pointer hover:bg-gray-200"
+      on:click={nextProject}
+    >
       <i class="fas fa-chevron-right fa-fw text-4xl" />
     </div>
   </section>
