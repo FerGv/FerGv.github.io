@@ -1,6 +1,6 @@
 <script>
   // Components
-  import ProjectCard from './components/ProjectCard.svelte';
+  import ProjectCard from '../components/ProjectCard.svelte';
 
   let projectIndex = 0;
   const projects = [

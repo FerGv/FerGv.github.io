@@ -1,6 +1,6 @@
 <script>
   // Components
-  import SkillCard from './components/SkillCard.svelte';
+  import SkillCard from '../components/SkillCard.svelte';
 
   const skills = [
     {
