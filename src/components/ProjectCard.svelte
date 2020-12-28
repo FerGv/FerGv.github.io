@@ -25,7 +25,7 @@
   }
 </style>
 
-<article class="flex flex-col sm:flex-row bg-white text-center rounded flex-1">
+<article class="flex flex-col sm:flex-row bg-white text-center rounded flex-1 border">
   <img
     src="/img/{image}"
     alt={title}

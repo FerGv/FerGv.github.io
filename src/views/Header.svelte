@@ -1,12 +1,11 @@
 <style>
   header {
-    background-image: url("/img/header-bg.jpg");
+    background-image: url(/img/header-bg.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .name {
     background-color: rgba(255, 255, 255, 0.8);
   }
