@@ -53,7 +53,7 @@
   }
 </script>
 
-<section class="py-10 px-5">
+<section class="py-20 px-5">
   <h3 class="font-bold text-3xl text-center border border-black mb-4 rounded">
     Proyectos
   </h3>

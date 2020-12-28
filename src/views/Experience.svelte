@@ -36,7 +36,7 @@
   }
 </style>
 
-<section class="py-10 px-5">
+<section class="py-20 px-5">
   <h3 class="font-bold text-3xl text-center text-white border border-white mb-4 rounded">
     Experiencia Laboral
   </h3>

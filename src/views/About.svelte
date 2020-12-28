@@ -13,7 +13,7 @@
   ]
 </script>
 
-<section class="flex flex-col md:flex-row justify-center items-center py-10 md:px-20">
+<section class="flex flex-col md:flex-row justify-center items-center py-20 md:px-20">
   <img
     src="https://avatars2.githubusercontent.com/u/10598981?s=460&u=834eb543ae75b8fe7d4b332672870741f0f1d036&v=4"
     alt="Me"
@@ -32,10 +32,7 @@
 
     <br />
 
-    <p>
-      Te dejo mi contacto por si gustas charlar. Debajo podrás encontrar
-      algunos de mis proyectos y otras cosas interesantes sobre mí.
-    </p>
+    <p>Te dejo mi contacto por si gustas charlar.</p>
 
     <br />
 
