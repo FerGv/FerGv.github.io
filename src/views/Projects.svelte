@@ -53,8 +53,8 @@
   }
 </script>
 
-<section class="py-10 sm:px-5 bg-gray-400">
-  <h3 class="font-bold text-3xl text-center border border-black mb-4">
+<section class="py-10 px-5 bg-gray-400">
+  <h3 class="font-bold text-3xl text-center text-white border border-white mb-4">
     Proyectos
   </h3>
 

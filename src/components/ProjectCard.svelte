@@ -29,7 +29,7 @@
   <img
     src="/img/{image}"
     alt={title}
-    class="rounded rounded-tr-none rounded-br-none sm:w-1/2"
+    class="rounded-t sm:rounded-t-none sm:rounded-l sm:w-1/2"
   >
 
   <div class="project-info flex flex-col justify-center content-center px-5 sm:px-10 flex-1">
