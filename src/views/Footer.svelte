@@ -1,4 +1,18 @@
 <script>
+  // Store
+  import { language } from '../store';
+
+  const translation = {
+    en: {
+      with: 'with',
+      author: 'by Fernando García in ',
+    },
+    es: {
+      with: 'con',
+      author: 'por Fernando García en ',
+    },
+  };
+
   const year = new Date().getFullYear();
   const socialIcons = [
     {
@@ -23,8 +37,8 @@
 
   <section>
     <i class="fas fa-code fa-fw text-blue-500" />
-    con
+    {translation[$language].with}
     <i class="fas fa-heart fa-fw text-red-500" />
-    por Fernando García en {year} &copy;
+    {translation[$language].author} {year} &copy;
   </section>
 </footer>
