@@ -2,16 +2,8 @@
   // Store
   import { language } from '../store';
 
-  const translation = {
-    en: {
-      with: 'with',
-      author: 'by Fernando García in ',
-    },
-    es: {
-      with: 'con',
-      author: 'por Fernando García en ',
-    },
-  };
+  // Translation
+  import translation from '../translations/footer';
 
   const year = new Date().getFullYear();
   const socialIcons = [

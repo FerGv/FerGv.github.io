@@ -2,14 +2,8 @@
   // Store
   import { language } from '../store';
 
-  const translation = {
-    en: {
-      job: 'Developer',
-    },
-    es: {
-      job: 'Desarrollador',
-    },
-  };
+  // Translation
+  import translation from '../translations/header';
 </script>
 
 <style>
