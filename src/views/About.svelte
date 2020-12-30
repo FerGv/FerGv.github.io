@@ -9,6 +9,10 @@
         software development (web, mobile, etc).`,
       thirdParagraph: 'Here you have my contact if you want to talk.',
       fourthParagraph: 'Regards :D',
+      cv: {
+        label: 'Download CV',
+        file: 'CV_Fernando_García_(en).pdf',
+      },
     },
     es: {
       firstParagraph: 'Hola, mi nombre es Fernando.',
@@ -16,6 +20,10 @@
         me encanta el desarrollo de aplicaciones (web, móvil, etc).`,
       thirdParagraph: 'Te dejo mi contacto por si gustas charlar.',
       fourthParagraph: 'Saludos :D',
+      cv: {
+        label: 'Descargar CV',
+        file: 'CV_Fernando_García_(es).pdf',
+      },
     },
   };
 
@@ -62,5 +70,16 @@
         </a>
       </p>
     {/each}
+
+    <p class="text-center my-3">
+      <a
+        class="text-green-500 text-center inline-block md:transform hover:scale-125"
+        href="/files/{translation[$language].cv.file}"
+        download
+      >
+        <i class="fas fa-download fa-fw" />
+        {translation[$language].cv.label}
+      </a>
+    </p>
   </section>
 </section>

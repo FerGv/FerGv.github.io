@@ -504,7 +504,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (53:4) {#each contactLinks as {text, link, icon}}
+    // (61:4) {#each contactLinks as {text, link, icon}}
     function create_each_block(ctx) {
     	let p;
     	let a;
@@ -514,7 +514,6 @@ var app = (function () {
     	let t1_value = /*text*/ ctx[3] + "";
     	let t1;
     	let a_href_value;
-    	let t2;
 
     	const block = {
     		c: function create() {
@@ -523,15 +522,14 @@ var app = (function () {
     			i = element("i");
     			t0 = space();
     			t1 = text(t1_value);
-    			t2 = space();
     			attr_dev(i, "class", i_class_value = "fas fa-" + /*icon*/ ctx[5] + " fa-fw");
-    			add_location(i, file, 59, 10, 1703);
+    			add_location(i, file, 67, 10, 1896);
     			attr_dev(a, "class", "text-green-500 text-center inline-block md:transform hover:scale-125");
     			attr_dev(a, "href", a_href_value = /*link*/ ctx[4]);
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file, 54, 8, 1545);
+    			add_location(a, file, 62, 8, 1738);
     			attr_dev(p, "class", "text-center my-3");
-    			add_location(p, file, 53, 6, 1508);
+    			add_location(p, file, 61, 6, 1701);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -539,7 +537,6 @@ var app = (function () {
     			append_dev(a, i);
     			append_dev(a, t0);
     			append_dev(a, t1);
-    			append_dev(p, t2);
     		},
     		p: noop,
     		d: function destroy(detaching) {
@@ -551,7 +548,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(53:4) {#each contactLinks as {text, link, icon}}",
+    		source: "(61:4) {#each contactLinks as {text, link, icon}}",
     		ctx
     	});
 
@@ -586,6 +583,14 @@ var app = (function () {
     	let t10_value = /*translation*/ ctx[1][/*$language*/ ctx[0]].fourthParagraph + "";
     	let t10;
     	let t11;
+    	let t12;
+    	let p4;
+    	let a;
+    	let i;
+    	let t13;
+    	let t14_value = /*translation*/ ctx[1][/*$language*/ ctx[0]].cv.label + "";
+    	let t14;
+    	let a_href_value;
     	let each_value = /*contactLinks*/ ctx[2];
     	validate_each_argument(each_value);
     	let each_blocks = [];
@@ -623,22 +628,36 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
+    			t12 = space();
+    			p4 = element("p");
+    			a = element("a");
+    			i = element("i");
+    			t13 = space();
+    			t14 = text(t14_value);
     			if (img.src !== (img_src_value = "/img/profile-photo.jpeg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Me");
     			attr_dev(img, "loading", "lazy");
     			attr_dev(img, "class", "rounded-full w-1/3 md:w-1/5");
-    			add_location(img, file, 36, 2, 1060);
-    			add_location(p0, file, 44, 4, 1219);
-    			add_location(br0, file, 45, 4, 1270);
-    			add_location(p1, file, 46, 4, 1281);
-    			add_location(br1, file, 47, 4, 1333);
-    			add_location(p2, file, 48, 4, 1344);
-    			add_location(br2, file, 49, 4, 1395);
-    			add_location(p3, file, 50, 4, 1406);
+    			add_location(img, file, 44, 2, 1253);
+    			add_location(p0, file, 52, 4, 1412);
+    			add_location(br0, file, 53, 4, 1463);
+    			add_location(p1, file, 54, 4, 1474);
+    			add_location(br1, file, 55, 4, 1526);
+    			add_location(p2, file, 56, 4, 1537);
+    			add_location(br2, file, 57, 4, 1588);
+    			add_location(p3, file, 58, 4, 1599);
+    			attr_dev(i, "class", "fas fa-download fa-fw");
+    			add_location(i, file, 79, 8, 2199);
+    			attr_dev(a, "class", "text-green-500 text-center inline-block md:transform hover:scale-125");
+    			attr_dev(a, "href", a_href_value = "/files/" + /*translation*/ ctx[1][/*$language*/ ctx[0]].cv.file);
+    			attr_dev(a, "download", "");
+    			add_location(a, file, 74, 6, 2023);
+    			attr_dev(p4, "class", "text-center my-3");
+    			add_location(p4, file, 73, 4, 1988);
     			attr_dev(section0, "class", "px-5 mt-4 md:mt-0");
-    			add_location(section0, file, 43, 2, 1179);
+    			add_location(section0, file, 51, 2, 1372);
     			attr_dev(section1, "class", "flex flex-col md:flex-row justify-center items-center py-12 md:px-20");
-    			add_location(section1, file, 35, 0, 971);
+    			add_location(section1, file, 43, 0, 1164);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -670,6 +689,13 @@ var app = (function () {
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(section0, null);
     			}
+
+    			append_dev(section0, t12);
+    			append_dev(section0, p4);
+    			append_dev(p4, a);
+    			append_dev(a, i);
+    			append_dev(a, t13);
+    			append_dev(a, t14);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*$language*/ 1 && t1_value !== (t1_value = /*translation*/ ctx[1][/*$language*/ ctx[0]].firstParagraph + "")) set_data_dev(t1, t1_value);
@@ -690,7 +716,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(section0, null);
+    						each_blocks[i].m(section0, t12);
     					}
     				}
 
@@ -699,6 +725,12 @@ var app = (function () {
     				}
 
     				each_blocks.length = each_value.length;
+    			}
+
+    			if (dirty & /*$language*/ 1 && t14_value !== (t14_value = /*translation*/ ctx[1][/*$language*/ ctx[0]].cv.label + "")) set_data_dev(t14, t14_value);
+
+    			if (dirty & /*$language*/ 1 && a_href_value !== (a_href_value = "/files/" + /*translation*/ ctx[1][/*$language*/ ctx[0]].cv.file)) {
+    				attr_dev(a, "href", a_href_value);
     			}
     		},
     		i: noop,
@@ -733,14 +765,22 @@ var app = (function () {
     			secondParagraph: `I have a degree in Computer Science and I love
         software development (web, mobile, etc).`,
     			thirdParagraph: "Here you have my contact if you want to talk.",
-    			fourthParagraph: "Regards :D"
+    			fourthParagraph: "Regards :D",
+    			cv: {
+    				label: "Download CV",
+    				file: "CV_Fernando_García_(en).pdf"
+    			}
     		},
     		es: {
     			firstParagraph: "Hola, mi nombre es Fernando.",
     			secondParagraph: `Soy egresado de la Lic. en Ciencias de la Informática y
         me encanta el desarrollo de aplicaciones (web, móvil, etc).`,
     			thirdParagraph: "Te dejo mi contacto por si gustas charlar.",
-    			fourthParagraph: "Saludos :D"
+    			fourthParagraph: "Saludos :D",
+    			cv: {
+    				label: "Descargar CV",
+    				file: "CV_Fernando_García_(es).pdf"
+    			}
     		}
     	};
 
@@ -2594,15 +2634,15 @@ var app = (function () {
     			}
 
     			attr_dev(h30, "class", "text-white font-bold text-3xl text-center border mb-4 rounded");
-    			add_location(h30, file$8, 170, 2, 3610);
+    			add_location(h30, file$8, 170, 2, 3614);
     			attr_dev(section0, "class", "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 svelte-1rkjq02");
-    			add_location(section0, file$8, 174, 2, 3741);
+    			add_location(section0, file$8, 174, 2, 3745);
     			attr_dev(h31, "class", "text-white font-bold text-3xl text-center border mt-10 mb-4 rounded");
-    			add_location(h31, file$8, 180, 2, 3926);
+    			add_location(h31, file$8, 180, 2, 3930);
     			attr_dev(section1, "class", "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 svelte-1rkjq02");
-    			add_location(section1, file$8, 184, 2, 4063);
+    			add_location(section1, file$8, 184, 2, 4067);
     			attr_dev(section2, "class", "py-12 px-5 svelte-1rkjq02");
-    			add_location(section2, file$8, 169, 0, 3579);
+    			add_location(section2, file$8, 169, 0, 3583);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2806,7 +2846,7 @@ var app = (function () {
     					stars: 5
     				},
     				{
-    					name: "Laboriosity",
+    					name: "Industriousness",
     					icon: "briefcase",
     					iconColor: "red-400",
     					stars: 5

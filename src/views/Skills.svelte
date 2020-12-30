@@ -67,7 +67,7 @@
           stars: 5,
         },
         {
-          name: 'Laboriosity',
+          name: 'Industriousness',
           icon: 'briefcase',
           iconColor: 'red-400',
           stars: 5,
