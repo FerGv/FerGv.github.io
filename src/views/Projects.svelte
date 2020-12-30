@@ -83,7 +83,7 @@
   $: projects = translation[$language].projects;
   $: currentProject = projects[projectIndex];
 
-  const nextProject = () => {
+  function nextProject() {
     projectIndex = projectIndex + 1;
 
     if (projectIndex >= projects.length) {
@@ -91,7 +91,7 @@
     }
   }
 
-  const lastProject = () => {
+  function lastProject() {
     projectIndex = projectIndex - 1;
 
     if (projectIndex < 0) {
@@ -114,12 +114,7 @@
     </div>
 
     {#if currentProject}
-      <ProjectCard
-        description={currentProject.description}
-        image={currentProject.image}
-        link={currentProject.link}
-        title={currentProject.title}
-      />
+      <ProjectCard {...currentProject} />
     {/if}
 
     <div

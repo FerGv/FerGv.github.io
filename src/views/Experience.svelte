@@ -75,8 +75,8 @@
   </h3>
 
   <section class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-    {#each translation[$language].jobs as { company, period, title }}
-      <ExperienceJob {company} {period} {title} />
+    {#each translation[$language].jobs as job}
+      <ExperienceJob {...job} />
     {/each}
   </section>
 </section>

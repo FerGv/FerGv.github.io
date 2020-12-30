@@ -173,8 +173,8 @@
   </h3>
 
   <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-    {#each translation[$language].techSkills as { name, icon, iconColor, stars }}
-      <SkillCard {name} {icon} {iconColor} {stars} />
+    {#each translation[$language].techSkills as skill}
+      <SkillCard {...skill} />
     {/each}
   </section>
 
@@ -183,8 +183,8 @@
   </h3>
 
   <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-    {#each translation[$language].softSkills as { name, icon, iconColor, stars }}
-      <SkillCard {name} {icon} {iconColor} {stars} />
+    {#each translation[$language].softSkills as skill}
+      <SkillCard {...skill} />
     {/each}
   </section>
 </section>
