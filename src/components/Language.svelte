@@ -7,17 +7,20 @@
       icon: 'lang-es.svg',
       label: 'Ver versión en español',
       imgAlt: 'Cambiar idioma',
+      documentTitle: 'Fernando García | Developer',
     },
     es: {
       icon: 'lang-en.svg',
       label: 'View English version',
       imgAlt: 'Change language',
+      documentTitle: 'Fernando García | Desarrollador',
     },
   };
 
   const changeLanguage = () => {
     const isEnglishVersion = $language === 'en';
     language.set(isEnglishVersion ? 'es' : 'en');
+    document.title = translation[$language].documentTitle;
   };
 </script>
 
@@ -31,6 +34,12 @@
   class="bg-gray-300 flex justify-center items-center text-blue-500 cursor-pointer"
   on:click={changeLanguage}
 >
-  <img src="/img/{translation[$language].icon}" alt={translation[$language].imgAlt} />
-  <span class="ml-2">{translation[$language].label}</span>
+  <img
+    src="/img/{translation[$language].icon}"
+    alt={translation[$language].imgAlt}
+  />
+
+  <span class="ml-2">
+    {translation[$language].label}
+  </span>
 </section>

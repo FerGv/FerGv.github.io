@@ -6,5 +6,4 @@
 - Remove animations on mobile
 - Image lazy loading
 - Add CV
-- Change document title when changing lang
 - Move translations to separate files
