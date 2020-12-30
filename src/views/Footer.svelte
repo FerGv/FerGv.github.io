@@ -30,7 +30,7 @@
   <section>
     {#each socialIcons as socialIcon}
       <a href={socialIcon.link} target="_blank">
-        <i class="fab fa-{socialIcon.icon} fa-fw text-3xl transform hover:scale-150" />
+        <i class="fab fa-{socialIcon.icon} fa-fw text-3xl md:transform hover:scale-150" />
       </a>
     {/each}
   </section>

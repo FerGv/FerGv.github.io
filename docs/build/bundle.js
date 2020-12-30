@@ -525,8 +525,8 @@ var app = (function () {
     			t1 = text(t1_value);
     			t2 = space();
     			attr_dev(i, "class", i_class_value = "fas fa-" + /*icon*/ ctx[5] + " fa-fw");
-    			add_location(i, file, 59, 10, 1700);
-    			attr_dev(a, "class", "text-green-500 text-center inline-block transform hover:scale-125");
+    			add_location(i, file, 59, 10, 1703);
+    			attr_dev(a, "class", "text-green-500 text-center inline-block md:transform hover:scale-125");
     			attr_dev(a, "href", a_href_value = /*link*/ ctx[4]);
     			attr_dev(a, "target", "_blank");
     			add_location(a, file, 54, 8, 1545);
@@ -1274,7 +1274,7 @@ var app = (function () {
     			a = element("a");
     			i = element("i");
     			t = space();
-    			attr_dev(i, "class", i_class_value = "fab fa-" + /*socialIcon*/ ctx[4].icon + " fa-fw text-3xl transform hover:scale-150");
+    			attr_dev(i, "class", i_class_value = "fab fa-" + /*socialIcon*/ ctx[4].icon + " fa-fw text-3xl md:transform hover:scale-150");
     			add_location(i, file$3, 32, 8, 674);
     			attr_dev(a, "href", a_href_value = /*socialIcon*/ ctx[4].link);
     			attr_dev(a, "target", "_blank");
@@ -1350,10 +1350,10 @@ var app = (function () {
     			t8 = text(" ©");
     			add_location(section0, file$3, 29, 2, 569);
     			attr_dev(i0, "class", "fas fa-code fa-fw text-blue-500");
-    			add_location(i0, file$3, 38, 4, 807);
+    			add_location(i0, file$3, 38, 4, 810);
     			attr_dev(i1, "class", "fas fa-heart fa-fw text-red-500");
-    			add_location(i1, file$3, 40, 4, 891);
-    			add_location(section1, file$3, 37, 2, 793);
+    			add_location(i1, file$3, 40, 4, 894);
+    			add_location(section1, file$3, 37, 2, 796);
     			attr_dev(footer, "class", "bg-gray-900 text-white text-center py-10");
     			add_location(footer, file$3, 28, 0, 509);
     		},
@@ -2181,7 +2181,7 @@ var app = (function () {
     		c: function create() {
     			i = element("i");
     			attr_dev(i, "class", "fas fa-star fa-fw text-yellow-400");
-    			add_location(i, file$7, 16, 6, 357);
+    			add_location(i, file$7, 16, 6, 360);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -2236,12 +2236,12 @@ var app = (function () {
     			}
 
     			attr_dev(i, "class", i_class_value = "fas fa-" + /*icon*/ ctx[1] + " fa-fw text-" + /*iconColor*/ ctx[2] + " text-4xl");
-    			add_location(i, file$7, 9, 4, 202);
-    			add_location(p0, file$7, 8, 2, 194);
+    			add_location(i, file$7, 9, 4, 205);
+    			add_location(p0, file$7, 8, 2, 197);
     			attr_dev(p1, "class", "font-bold uppercase");
-    			add_location(p1, file$7, 12, 2, 272);
-    			add_location(p2, file$7, 14, 2, 317);
-    			attr_dev(article, "class", "flex flex-col bg-white text-center p-5 rounded transform hover:scale-90");
+    			add_location(p1, file$7, 12, 2, 275);
+    			add_location(p2, file$7, 14, 2, 320);
+    			attr_dev(article, "class", "flex flex-col bg-white text-center p-5 rounded md:transform hover:scale-90");
     			add_location(article, file$7, 7, 0, 102);
     		},
     		l: function claim(nodes) {

@@ -53,7 +53,7 @@
     {#each contactLinks as {text, link, icon}}
       <p class="text-center my-3">
         <a
-          class="text-green-500 text-center inline-block transform hover:scale-125"
+          class="text-green-500 text-center inline-block md:transform hover:scale-125"
           href={link}
           target="_blank"
         >
