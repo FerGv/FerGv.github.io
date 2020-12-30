@@ -2,9 +2,9 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c && source prod.sh",
+    "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "sirv docs"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",
