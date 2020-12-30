@@ -37,6 +37,7 @@
   <img
     src="/img/profile-photo.jpeg"
     alt="Me"
+    loading="lazy"
     class="rounded-full w-1/3 md:w-1/5"
   />
 

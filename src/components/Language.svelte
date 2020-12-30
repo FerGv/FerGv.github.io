@@ -37,6 +37,7 @@
   <img
     src="/img/{translation[$language].icon}"
     alt={translation[$language].imgAlt}
+    loading="lazy"
   />
 
   <span class="ml-2">

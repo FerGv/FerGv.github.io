@@ -29,6 +29,7 @@
   <img
     src="/img/{image}"
     alt={title}
+    loading="lazy"
     class="rounded-t sm:rounded-t-none sm:rounded-l sm:w-1/2"
   >
 
