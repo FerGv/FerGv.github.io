@@ -2,9 +2,11 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv docs"
+    "build": "npm run tailwind-prod && rollup -c",
+    "dev": "npm run tailwind-dev && rollup -c -w",
+    "start": "sirv docs",
+    "tailwind-dev": "npx tailwindcss-cli@latest build -o ./docs/css/tailwind.css",
+    "tailwind-prod": "NODE_ENV=production npm run tailwind-dev"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",
