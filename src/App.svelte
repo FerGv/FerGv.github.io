@@ -9,6 +9,11 @@
 
   // Components
   import Language from './components/Language.svelte';
+
+  // Font Awesome
+  import '@fortawesome/fontawesome-free/js/brands';
+  import '@fortawesome/fontawesome-free/js/solid';
+  import '@fortawesome/fontawesome-free/js/fontawesome';
 </script>
 
 <main>
