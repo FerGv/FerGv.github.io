@@ -2,7 +2,7 @@
 
 > Link to site: [fergv.com](https://fergv.com)
 
-This website is built with [Svelte](https://svelte.dev/) and [TailwindCSS](https://tailwindcss.com/).
+This website is built with [Svelte](https://svelte.dev/), [Sapper](https://sapper.svelte.dev/) and [TailwindCSS](https://tailwindcss.com/).
 
 ## Setup
 - Install dependencies
@@ -25,4 +25,15 @@ npm run build
 - Serve compiled files
 ```sh
 npm run start
+```
+
+- Export site as static files
+> Purge TailwindCSS
+```sh
+npm run export
+```
+
+- Serve static files
+```sh
+npm run serve
 ```

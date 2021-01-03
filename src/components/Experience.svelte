@@ -1,6 +1,6 @@
 <script>
   // Components
-  import ExperienceJob from '../components/ExperienceJob.svelte';
+  import ExperienceJob from './ExperienceJob.svelte';
 
   // Store
   import { language } from '../store';

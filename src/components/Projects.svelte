@@ -1,6 +1,6 @@
 <script>
   // Components
-  import ProjectCard from '../components/ProjectCard.svelte';
+  import ProjectCard from './ProjectCard.svelte';
 
   // Store
   import { language } from '../store';

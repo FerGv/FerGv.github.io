@@ -1,25 +1,37 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "portfolio",
+  "description": "portfolio",
+  "version": "0.0.1",
   "scripts": {
-    "build": "npm run tailwind-prod && rollup -c",
-    "dev": "npm run tailwind-dev && rollup -c -w",
-    "start": "sirv docs",
-    "tailwind-dev": "npx tailwindcss-cli@latest build -o ./docs/css/tailwind.css",
+    "dev": "npm run tailwind-dev && sapper dev",
+    "build": "npm run tailwind-prod && sapper build --legacy",
+    "export": "npm run tailwind-prod && sapper export --legacy && source github-deploy.sh",
+    "serve": "npx serve __sapper__/export",
+    "start": "node __sapper__/build",
+    "tailwind-dev": "npx tailwindcss-cli@latest build -o ./static/css/tailwind.css",
     "tailwind-prod": "NODE_ENV=production npm run tailwind-dev"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^16.0.0",
-    "@rollup/plugin-node-resolve": "^10.0.0",
-    "rollup": "^2.3.4",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "svelte": "^3.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
-    "sirv-cli": "^1.0.0"
+    "compression": "^1.7.1",
+    "polka": "next",
+    "sirv": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/runtime": "^7.0.0",
+    "@rollup/plugin-babel": "^5.0.0",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@rollup/plugin-replace": "^2.2.0",
+    "@rollup/plugin-url": "^5.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "sapper": "^0.28.0",
+    "svelte": "^3.17.3"
   }
 }
