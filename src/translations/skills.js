@@ -120,7 +120,7 @@ export default {
         name: 'Inglés',
         icon: 'language',
         iconColor: 'text-blue-400',
-        stars: 4,
+        stars: 3,
       },
       {
         name: 'Comunicación',
