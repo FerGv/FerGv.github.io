@@ -1,72 +1,40 @@
 export default {
   en: {
     title: 'Projects',
-    projects: [
+    sections: [
       {
-        title: 'School Fit',
-        description: 'Project dedicated to improve students health at university.',
-        image: 'school.jpg',
-        link: 'https://github.com/e-mind/Escuela-Fit',
+        buttonText: 'Visitar',
+        description: 'Here you will find the code of some projects I have developed.',
+        icon: 'fab fa-github-alt',
+        link: 'https://github.com/FerGv',
+        title: 'My GitHub profile',
       },
       {
-        title: 'Lexical analyzer',
-        description: 'Get a list of programming languages.',
-        image: 'analyzer.png',
-        link: 'https://github.com/FerGv/lexical-analyzer',
-      },
-      {
-        title: 'Virtual Library',
-        description: 'Media content management (images, videos, files).',
-        image: 'library.png',
-        link: 'https://github.com/FerGv/virtual-library',
-      },
-      {
-        title: 'Café',
-        description: 'Café inventory management',
-        image: 'cafe.jpg',
-        link: 'https://github.com/FerGv/SGI',
-      },
-      {
-        title: 'Veterinary clinic',
-        description: 'Customers, pets and doctors management.',
-        image: 'veterinary-clinic.jpg',
-        link: 'https://github.com/FerGv/veterinary-clinic',
+        buttonText: 'Visitar',
+        description: 'Here you will find some articles about programming.',
+        icon: 'fas fa-book-reader',
+        link: 'https://blog.fergv.com/',
+        title: 'My personal blog',
       },
     ],
   },
 
   es: {
     title: 'Proyectos',
-    projects: [
+    sections: [
       {
-        title: 'Escuela Fit',
-        description: 'Proyecto dedicado a mejorar la salud de los alumnos de la UPIICSA.',
-        image: 'school.jpg',
-        link: 'https://github.com/e-mind/Escuela-Fit',
+        buttonText: 'Visitar',
+        description: 'Aquí encontrás el código de algunos proyectos que he realizado.',
+        icon: 'fab fa-github-alt',
+        link: 'https://github.com/FerGv',
+        title: 'Mi perfil de GitHub',
       },
       {
-        title: 'Analizador Léxico',
-        description: 'Obtención de un listado de lenguajes de programación.',
-        image: 'analyzer.png',
-        link: 'https://github.com/FerGv/lexical-analyzer',
-      },
-      {
-        title: 'Biblioteca Virtual',
-        description: 'Gestión de contenido multimedia (fotos, videos, imágenes, archivos).',
-        image: 'library.png',
-        link: 'https://github.com/FerGv/virtual-library',
-      },
-      {
-        title: 'Cafetería',
-        description: 'Gestión del inventario de una cafetería.',
-        image: 'cafe.jpg',
-        link: 'https://github.com/FerGv/SGI',
-      },
-      {
-        title: 'Veterinaria',
-        description: 'Gestión de clientes, mascotas (citas e historial) y doctores de una clínica veterinaria.',
-        image: 'veterinary-clinic.jpg',
-        link: 'https://github.com/FerGv/veterinary-clinic',
+        buttonText: 'Visitar',
+        description: 'Aquí encontrarás algunos artículos sobre programación.',
+        icon: 'fas fa-book-reader',
+        link: 'https://blog.fergv.com/',
+        title: 'Mi blog personal',
       },
     ],
   },

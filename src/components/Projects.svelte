@@ -1,57 +1,34 @@
 <script>
-  // Components
-  import ProjectCard from './ProjectCard.svelte';
-
   // Store
-  import { language } from '../store';
+  import { language } from "../store";
 
   // Translation
-  import translation from '../translations/projects';
-
-  let projectIndex = 0;
-
-  $: projects = translation[$language].projects;
-  $: currentProject = projects[projectIndex];
-
-  function nextProject() {
-    projectIndex = projectIndex + 1;
-
-    if (projectIndex >= projects.length) {
-      projectIndex = 0;
-    }
-  }
-
-  function lastProject() {
-    projectIndex = projectIndex - 1;
-
-    if (projectIndex < 0) {
-      projectIndex = projects.length - 1;
-    }
-  }
+  import translation from "../translations/projects";
 </script>
 
-<section class="py-12 px-5 bg-gray-300">
+<section class="py-16 px-5 bg-white">
   <h3 class="font-bold text-3xl text-center border border-black mb-4 rounded">
     {translation[$language].title}
   </h3>
 
-  <section class="flex justify-center">
-    <div
-      class="flex flex-col justify-center cursor-pointer hover:bg-gray-200"
-      on:click={lastProject}
-    >
-      <i class="fas fa-chevron-left fa-fw text-4xl" />
-    </div>
+  <div class="flex justify-center space-x-20">
+    {#each translation[$language].sections as { buttonText, description, icon, link, title }}
+      <article class="text-center space-y-5">
+        <p class="text-2xl text-gray-800 font-semibold">{title}</p>
 
-    {#if currentProject}
-      <ProjectCard {...currentProject} />
-    {/if}
+        <p class="text-gray-600">{description}</p>
 
-    <div
-      class="flex flex-col justify-center cursor-pointer hover:bg-gray-200"
-      on:click={nextProject}
-    >
-      <i class="fas fa-chevron-right fa-fw text-4xl" />
-    </div>
-  </section>
+        <p class="text-green-500">
+          <a
+            href={link}
+            target="_blank"
+            class="border border-green-500 py-2 px-5 rounded text-2xl hover:bg-green-500 hover:text-white"
+          >
+            <i class={icon} />
+            {buttonText}
+          </a>
+        </p>
+      </article>
+    {/each}
+  </div>
 </section>
