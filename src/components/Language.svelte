@@ -1,25 +1,19 @@
 <script>
   // Store
-  import { language } from '../store';
+  import { language } from "../store";
 
   // Translation
-  import translation from '../translations/language';
+  import translation from "../translations/language";
 
   const changeLanguage = () => {
-    const isEnglishVersion = $language === 'en';
-    language.set(isEnglishVersion ? 'es' : 'en');
+    const isEnglishVersion = $language === "en";
+    language.set(isEnglishVersion ? "es" : "en");
     document.title = translation[$language].documentTitle;
   };
 </script>
 
-<style>
-  img {
-    width: 30px;
-  }
-</style>
-
 <section
-  class="bg-gray-300 flex justify-center items-center text-blue-500 cursor-pointer"
+  class="bg-blue-500 flex justify-center items-center text-white cursor-pointer"
   on:click={changeLanguage}
 >
   <img
@@ -28,7 +22,13 @@
     loading="lazy"
   />
 
-  <span class="ml-2">
+  <span class="ml-2 font-semibold">
     {translation[$language].label}
   </span>
 </section>
+
+<style>
+  img {
+    width: 40px;
+  }
+</style>
