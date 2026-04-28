@@ -2,19 +2,22 @@
 
 ---
 
-<section class="relative py-24 overflow-hidden" id="sobre-mi">
+<section class="relative py-24" id="sobre-mi">
   <!-- Background glows -->
   <div
     aria-hidden="true"
-    class="pointer-events-none absolute -top-32 -right-24 w-[600px] h-[500px] rounded-full"
-    style="background: radial-gradient(ellipse, rgba(0,220,130,0.12) 0%, transparent 70%); filter: blur(80px);"
+    class="pointer-events-none absolute inset-0 overflow-hidden"
   >
-  </div>
-  <div
-    aria-hidden="true"
-    class="pointer-events-none absolute bottom-0 -left-20 w-[400px] h-[400px] rounded-full"
-    style="background: radial-gradient(ellipse, rgba(0,71,225,0.12) 0%, transparent 70%); filter: blur(80px);"
-  >
+    <div
+      class="absolute -top-32 -right-24 w-[600px] h-[500px] rounded-full"
+      style="background: radial-gradient(ellipse, rgba(0,220,130,0.12) 0%, transparent 70%); filter: blur(80px);"
+    >
+    </div>
+    <div
+      class="absolute bottom-0 -left-20 w-[400px] h-[400px] rounded-full"
+      style="background: radial-gradient(ellipse, rgba(0,71,225,0.12) 0%, transparent 70%); filter: blur(80px);"
+    >
+    </div>
   </div>
 
   <div
@@ -105,29 +108,31 @@
       class="relative shrink-0 order-1 md:order-2 flex justify-center"
       aria-label="Foto de Fernando García"
     >
-      <div class="hero-photo-ring" aria-hidden="true"></div>
-      <img
-        class="w-52 h-52 md:w-60 md:h-60 rounded-full object-cover object-top border-[3px] border-nuxt-dark"
-        src="/profile-photo.jpg"
-        alt="Fernando García"
-        width="240"
-        height="240"
-      />
-      <div
-        aria-hidden="true"
-        class="absolute bottom-2.5 -right-2.5 flex items-center gap-1 bg-nuxt-soft border border-white/10 rounded-full px-3.5 py-1.5 text-xs font-semibold text-white whitespace-nowrap shadow-md"
-      >
-        <svg
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#00DC82"
-          stroke-width="2"
+      <div class="relative w-52 h-52 md:w-60 md:h-60">
+        <div class="hero-photo-ring" aria-hidden="true"></div>
+        <img
+          class="w-full h-full rounded-full object-cover object-top border-[3px] border-nuxt-dark"
+          src="/profile-photo.jpg"
+          alt="Fernando García"
+          width="240"
+          height="240"
+        />
+        <div
+          aria-hidden="true"
+          class="absolute bottom-2.5 -right-2.5 flex items-center gap-1 bg-nuxt-soft border border-white/10 rounded-full px-3.5 py-1.5 text-xs font-semibold text-white whitespace-nowrap shadow-md"
         >
-          <polyline points="20 6 9 17 4 12"></polyline>
-        </svg>
-        Full-Stack Dev
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#00DC82"
+            stroke-width="2"
+          >
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Full-Stack Dev
+        </div>
       </div>
     </div>
   </div>
