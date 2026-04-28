@@ -10,34 +10,21 @@ interface TechGroup {
   items: TechItem[];
 }
 
-// Icons loaded from Iconify API (CDN) and local /public/icons/
 const techGroups: TechGroup[] = [
   {
     label: "Web",
     iconPath:
       '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>',
     items: [
-      { label: "Vue.js", src: "https://api.iconify.design/devicon/vuejs.svg" },
-      { label: "Pinia", src: "https://api.iconify.design/logos/pinia.svg" },
-      { label: "React", src: "https://api.iconify.design/devicon/react.svg" },
-      {
-        label: "TypeScript",
-        src: "https://api.iconify.design/devicon/typescript.svg",
-      },
-      {
-        label: "JavaScript",
-        src: "https://api.iconify.design/devicon/javascript.svg",
-      },
-      {
-        label: "Node.js",
-        src: "https://api.iconify.design/devicon/nodejs.svg",
-      },
-      {
-        label: "Express",
-        src: "https://api.iconify.design/simple-icons/express.svg?color=white",
-      },
-      { label: "Vite", src: "https://api.iconify.design/devicon/vitejs.svg" },
-      { label: "Vitest", src: "https://api.iconify.design/logos/vitest.svg" },
+      { label: "Vue.js", src: "/icons/vuejs.svg" },
+      { label: "Pinia", src: "/icons/pinia.svg" },
+      { label: "React", src: "/icons/react.svg" },
+      { label: "TypeScript", src: "/icons/typescript.svg" },
+      { label: "JavaScript", src: "/icons/javascript.svg" },
+      { label: "Node.js", src: "/icons/nodejs.svg" },
+      { label: "Express", src: "/icons/express.svg" },
+      { label: "Vite", src: "/icons/vitejs.svg" },
+      { label: "Vitest", src: "/icons/vitest.svg" },
     ],
   },
   {
@@ -45,15 +32,9 @@ const techGroups: TechGroup[] = [
     iconPath:
       '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>',
     items: [
-      {
-        label: "MongoDB",
-        src: "https://api.iconify.design/devicon/mongodb.svg",
-      },
-      { label: "MySQL", src: "https://api.iconify.design/devicon/mysql.svg" },
-      {
-        label: "PostgreSQL",
-        src: "https://api.iconify.design/devicon/postgresql.svg",
-      },
+      { label: "MongoDB", src: "/icons/mongodb.svg" },
+      { label: "MySQL", src: "/icons/mysql.svg" },
+      { label: "PostgreSQL", src: "/icons/postgresql.svg" },
     ],
   },
   {
@@ -61,43 +42,32 @@ const techGroups: TechGroup[] = [
     iconPath:
       '<circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 009 9"/>',
     items: [
-      { label: "Git", src: "https://api.iconify.design/devicon/git.svg" },
-      {
-        label: "GitHub",
-        src: "https://api.iconify.design/simple-icons/github.svg?color=white",
-      },
+      { label: "Git", src: "/icons/git.svg" },
+      { label: "GitHub", src: "/icons/github.svg" },
     ],
   },
   {
     label: "Cloud",
     iconPath: '<path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/>',
     items: [
-      {
-        label: "AWS",
-        src: "https://api.iconify.design/skill-icons/aws-dark.svg",
-      },
-      { label: "EC2", src: "https://api.iconify.design/logos/aws-ec2.svg" },
-      { label: "S3", src: "https://api.iconify.design/logos/aws-s3.svg" },
-      { label: "ECS", src: "https://api.iconify.design/logos/aws-ecs.svg" },
+      { label: "AWS", src: "/icons/aws-dark.svg" },
+      { label: "EC2", src: "/icons/aws-ec2.svg" },
+      { label: "S3", src: "/icons/aws-s3.svg" },
+      { label: "ECS", src: "/icons/aws-ecs.svg" },
     ],
   },
   {
     label: "CI/CD",
     iconPath:
       '<circle cx="12" cy="12" r="3"/><path d="M3 12h6"/><path d="M15 12h6"/><path d="M12 3v6"/><path d="M12 15v6"/>',
-    items: [
-      {
-        label: "GH Actions",
-        src: "https://api.iconify.design/logos/github-actions.svg",
-      },
-    ],
+    items: [{ label: "GH Actions", src: "/icons/github-actions.svg" }],
   },
   {
     label: "DevOps",
     iconPath: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
     items: [
-      { label: "Docker", src: "https://api.iconify.design/devicon/docker.svg" },
-      { label: "Nginx", src: "https://api.iconify.design/devicon/nginx.svg" },
+      { label: "Docker", src: "/icons/docker.svg" },
+      { label: "Nginx", src: "/icons/nginx.svg" },
     ],
   },
   {
@@ -105,14 +75,8 @@ const techGroups: TechGroup[] = [
     iconPath:
       '<path d="M12 2a2 2 0 012 2v2a2 2 0 01-2 2 2 2 0 01-2-2V4a2 2 0 012-2z"/><path d="M12 16a2 2 0 012 2v2a2 2 0 01-2 2 2 2 0 01-2-2v-2a2 2 0 012-2z"/><path d="M4 10a2 2 0 012-2h2a2 2 0 012 2 2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M14 10a2 2 0 012-2h2a2 2 0 012 2 2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>',
     items: [
-      {
-        label: "Claude Code",
-        src: "https://api.iconify.design/simple-icons/claude.svg?color=%23D97757",
-      },
-      {
-        label: "Copilot",
-        src: "https://api.iconify.design/simple-icons/githubcopilot.svg?color=white",
-      },
+      { label: "Claude Code", src: "/icons/claude.svg" },
+      { label: "Copilot", src: "/icons/copilot.svg" },
     ],
   },
 ];
