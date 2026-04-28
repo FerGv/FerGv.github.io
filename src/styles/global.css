@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --color-nuxt-green: #00dc82;
+  --color-nuxt-dark: #020420;
+  --color-nuxt-soft: #080d26;
+  --color-nuxt-muted: #7c8db5;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #00dc82 0%, #36e4da 50%, #0047e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-photo-ring {
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, #00dc82, #0047e1) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  bottom: -24px;
+  width: 2px;
+  background: linear-gradient(to bottom, #00dc82, transparent);
+  opacity: 0.25;
+}

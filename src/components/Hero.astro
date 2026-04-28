@@ -1,0 +1,134 @@
+---
+
+---
+
+<section class="relative py-24 overflow-hidden" id="sobre-mi">
+  <!-- Background glows -->
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute -top-32 -right-24 w-[600px] h-[500px] rounded-full"
+    style="background: radial-gradient(ellipse, rgba(0,220,130,0.12) 0%, transparent 70%); filter: blur(80px);"
+  >
+  </div>
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute bottom-0 -left-20 w-[400px] h-[400px] rounded-full"
+    style="background: radial-gradient(ellipse, rgba(0,71,225,0.12) 0%, transparent 70%); filter: blur(80px);"
+  >
+  </div>
+
+  <div
+    class="relative max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[1fr_auto] items-center gap-16"
+  >
+    <!-- Content -->
+    <div class="flex flex-col items-start gap-5 md:order-1 order-2">
+      <!-- Available badge -->
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wider text-nuxt-green bg-nuxt-green/10 border border-nuxt-green/25"
+      >
+        <span
+          aria-hidden="true"
+          class="w-1.5 h-1.5 rounded-full bg-nuxt-green shadow-[0_0_6px_#00DC82] animate-pulse"
+        ></span>
+        Disponible para proyectos
+      </div>
+
+      <!-- Heading -->
+      <h1
+        class="text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight text-white"
+      >
+        Hola, soy<br />
+        <span class="gradient-text">Fernando García</span>
+      </h1>
+
+      <!-- Description -->
+      <p class="text-lg text-nuxt-muted leading-relaxed max-w-xl">
+        Desarrollador de aplicaciones web.<br />
+        Egresado de la Lic. en Ciencias de la Informática,<br />
+        apasionado por crear experiencias digitales que importan.
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="flex items-center gap-4 flex-wrap">
+        <a
+          href="mailto:jfer.garciav@gmail.com"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium bg-nuxt-green text-nuxt-dark border border-nuxt-green hover:bg-[#00f090] hover:shadow-[0_0_20px_rgba(0,220,130,0.4)] transition-all"
+        >
+          Contáctame
+        </a>
+        <a
+          href="#proyectos"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium text-nuxt-muted hover:text-nuxt-green transition-colors"
+        >
+          Ver proyectos
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Email link -->
+      <div class="flex flex-wrap gap-5 mt-2">
+        <a
+          href="mailto:jfer.garciav@gmail.com"
+          class="flex items-center gap-2 text-sm text-nuxt-muted hover:text-nuxt-green transition-colors"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            ></path>
+            <polyline points="22,6 12,12 2,6"></polyline>
+          </svg>
+          jfer.garciav@gmail.com
+        </a>
+      </div>
+    </div>
+
+    <!-- Photo -->
+    <div
+      class="relative shrink-0 order-1 md:order-2 flex justify-center"
+      aria-label="Foto de Fernando García"
+    >
+      <div class="hero-photo-ring" aria-hidden="true"></div>
+      <img
+        class="w-52 h-52 md:w-60 md:h-60 rounded-full object-cover object-top border-[3px] border-nuxt-dark"
+        src="/profile-photo.jpg"
+        alt="Fernando García"
+        width="240"
+        height="240"
+      />
+      <div
+        aria-hidden="true"
+        class="absolute bottom-2.5 -right-2.5 flex items-center gap-1 bg-nuxt-soft border border-white/10 rounded-full px-3.5 py-1.5 text-xs font-semibold text-white whitespace-nowrap shadow-md"
+      >
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#00DC82"
+          stroke-width="2"
+        >
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        Full-Stack Dev
+      </div>
+    </div>
+  </div>
+</section>

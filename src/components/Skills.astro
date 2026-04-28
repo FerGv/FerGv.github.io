@@ -1,0 +1,312 @@
+---
+interface TechItem {
+  label: string;
+  src: string;
+}
+
+interface TechGroup {
+  label: string;
+  iconPath: string;
+  items: TechItem[];
+}
+
+// Icons loaded from Iconify API (CDN) and local /public/icons/
+const techGroups: TechGroup[] = [
+  {
+    label: "Web",
+    iconPath:
+      '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>',
+    items: [
+      { label: "Vue.js", src: "https://api.iconify.design/devicon/vuejs.svg" },
+      { label: "Pinia", src: "https://api.iconify.design/logos/pinia.svg" },
+      { label: "React", src: "https://api.iconify.design/devicon/react.svg" },
+      {
+        label: "TypeScript",
+        src: "https://api.iconify.design/devicon/typescript.svg",
+      },
+      {
+        label: "JavaScript",
+        src: "https://api.iconify.design/devicon/javascript.svg",
+      },
+      {
+        label: "Node.js",
+        src: "https://api.iconify.design/devicon/nodejs.svg",
+      },
+      {
+        label: "Express",
+        src: "https://api.iconify.design/devicon/express.svg",
+      },
+      { label: "Vite", src: "https://api.iconify.design/devicon/vitejs.svg" },
+      { label: "Vitest", src: "https://api.iconify.design/logos/vitest.svg" },
+    ],
+  },
+  {
+    label: "Base de datos",
+    iconPath:
+      '<ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>',
+    items: [
+      {
+        label: "MongoDB",
+        src: "https://api.iconify.design/devicon/mongodb.svg",
+      },
+      { label: "MySQL", src: "https://api.iconify.design/devicon/mysql.svg" },
+      {
+        label: "PostgreSQL",
+        src: "https://api.iconify.design/devicon/postgresql.svg",
+      },
+    ],
+  },
+  {
+    label: "Control de versiones",
+    iconPath:
+      '<circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 009 9"/>',
+    items: [
+      { label: "Git", src: "https://api.iconify.design/devicon/git.svg" },
+      { label: "GitHub", src: "https://api.iconify.design/devicon/github.svg" },
+    ],
+  },
+  {
+    label: "Cloud",
+    iconPath: '<path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/>',
+    items: [
+      {
+        label: "AWS",
+        src: "https://api.iconify.design/devicon/amazonwebservices-original-wordmark.svg",
+      },
+      { label: "EC2", src: "/icons/ec2.svg" },
+      { label: "S3", src: "/icons/s3.svg" },
+      { label: "ECS", src: "/icons/ecs.svg" },
+    ],
+  },
+  {
+    label: "CI/CD",
+    iconPath:
+      '<circle cx="12" cy="12" r="3"/><path d="M3 12h6"/><path d="M15 12h6"/><path d="M12 3v6"/><path d="M12 15v6"/>',
+    items: [
+      {
+        label: "GH Actions",
+        src: "https://api.iconify.design/devicon/github-actions.svg",
+      },
+    ],
+  },
+  {
+    label: "DevOps",
+    iconPath: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+    items: [
+      { label: "Docker", src: "https://api.iconify.design/devicon/docker.svg" },
+      { label: "Nginx", src: "https://api.iconify.design/devicon/nginx.svg" },
+    ],
+  },
+  {
+    label: "IA",
+    iconPath:
+      '<path d="M12 2a2 2 0 012 2v2a2 2 0 01-2 2 2 2 0 01-2-2V4a2 2 0 012-2z"/><path d="M12 16a2 2 0 012 2v2a2 2 0 01-2 2 2 2 0 01-2-2v-2a2 2 0 012-2z"/><path d="M4 10a2 2 0 012-2h2a2 2 0 012 2 2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M14 10a2 2 0 012-2h2a2 2 0 012 2 2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>',
+    items: [
+      {
+        label: "Claude Code",
+        src: "https://api.iconify.design/simple-icons/claude.svg?color=%23D97757",
+      },
+      {
+        label: "Copilot",
+        src: "https://api.iconify.design/simple-icons/githubcopilot.svg",
+      },
+    ],
+  },
+];
+
+interface SoftSkill {
+  label: string;
+  description: string;
+  iconPath: string;
+  iconBg: string;
+  iconColor: string;
+}
+
+const softSkills: SoftSkill[] = [
+  {
+    label: "Inglés",
+    description:
+      "Nivel intermedio-avanzado. Lectura técnica fluida y comunicación escrita en entornos profesionales.",
+    iconPath:
+      '<path d="M5 8l6 6"/><path d="M4 14l6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="M22 22l-5-10-5 10"/><path d="M14 18h6"/>',
+    iconBg: "bg-nuxt-green/[0.12]",
+    iconColor: "text-nuxt-green",
+  },
+  {
+    label: "Comunicación",
+    description:
+      "Capacidad para transmitir ideas técnicas de forma clara a perfiles técnicos y no técnicos.",
+    iconPath:
+      '<path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>',
+    iconBg: "bg-[#36E4DA]/[0.12]",
+    iconColor: "text-[#36E4DA]",
+  },
+  {
+    label: "Trabajo en equipo",
+    description:
+      "Experiencia colaborando en equipos multidisciplinarios, con metodologías ágiles y entregas incrementales.",
+    iconPath:
+      '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>',
+    iconBg: "bg-blue-700/[0.15]",
+    iconColor: "text-blue-400",
+  },
+  {
+    label: "Laboriosidad",
+    description:
+      "Compromiso con la calidad y la mejora continua, con disposición para ir más allá de lo requerido.",
+    iconPath:
+      '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+    iconBg: "bg-orange-500/[0.12]",
+    iconColor: "text-orange-400",
+  },
+  {
+    label: "Liderazgo",
+    description:
+      "Iniciativa para guiar soluciones técnicas, mentorear compañeros y tomar decisiones bajo incertidumbre.",
+    iconPath:
+      '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+    iconBg: "bg-yellow-500/[0.12]",
+    iconColor: "text-yellow-400",
+  },
+];
+---
+
+<section class="py-24" id="habilidades">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <span
+        class="inline-block text-xs font-semibold tracking-widest uppercase text-nuxt-green mb-3"
+      >
+        Stack
+      </span>
+      <h2 class="text-4xl font-bold text-white tracking-tight">Habilidades</h2>
+      <p class="mt-3 text-lg text-nuxt-muted max-w-xl mx-auto">
+        Tecnologías y competencias que manejo en mi día a día.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-6 max-w-3xl mx-auto">
+      <!-- Technical skills card -->
+      <div
+        class="p-6 bg-white/[0.04] border border-white/10 rounded-xl hover:border-nuxt-green/35 hover:shadow-[0_0_40px_rgba(0,220,130,0.15)] transition-all"
+      >
+        <h3
+          class="flex items-center gap-2 text-base font-semibold text-white mb-5 pb-4 border-b border-white/10"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#00DC82"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          Técnicas
+        </h3>
+
+        <div class="flex flex-col gap-5">
+          {
+            techGroups.map((group, i) => (
+              <div class={i > 0 ? "pt-4 border-t border-white/[0.06]" : ""}>
+                <p class="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    aria-hidden="true"
+                    set:html={group.iconPath}
+                  />
+                  {group.label}
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <div class="flex flex-col items-center gap-1.5 py-2.5 px-3 rounded-lg bg-white/[0.03] border border-white/10 hover:border-[#00DC82]/30 hover:bg-[#00DC82]/5 transition-all w-16">
+                      <img
+                        src={item.src}
+                        alt={item.label}
+                        width="32"
+                        height="32"
+                        class="w-8 h-8 object-contain"
+                      />
+                      <span class="text-[10px] text-slate-400 text-center leading-tight">
+                        {item.label}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Soft skills card -->
+      <div
+        class="p-6 bg-white/[0.04] border border-white/10 rounded-xl hover:border-nuxt-green/35 hover:shadow-[0_0_40px_rgba(0,220,130,0.15)] transition-all"
+      >
+        <h3
+          class="flex items-center gap-2 text-base font-semibold text-white mb-5 pb-4 border-b border-white/10"
+        >
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#00DC82"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 010 7.75"></path>
+          </svg>
+          Sociales
+        </h3>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {
+            softSkills.map((skill) => (
+              <div class="flex items-start gap-3 py-3 px-4 rounded-lg bg-white/[0.03] border border-white/10 hover:border-nuxt-green/30 hover:bg-nuxt-green/10 transition-all">
+                <span
+                  aria-hidden="true"
+                  class:list={[
+                    "w-8 h-8 rounded-md flex items-center justify-center shrink-0 mt-0.5",
+                    skill.iconBg,
+                    skill.iconColor,
+                  ]}
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <Fragment set:html={skill.iconPath} />
+                  </svg>
+                </span>
+                <div>
+                  <p class="text-sm font-medium text-slate-200">
+                    {skill.label}
+                  </p>
+                  <p class="text-xs text-nuxt-muted mt-0.5 leading-relaxed">
+                    {skill.description}
+                  </p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

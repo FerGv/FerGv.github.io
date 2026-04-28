@@ -1,0 +1,50 @@
+---
+const navLinks = [
+  { href: "#sobre-mi", label: "Sobre mí" },
+  { href: "#experiencia", label: "Experiencia" },
+  { href: "#proyectos", label: "Proyectos" },
+  { href: "#habilidades", label: "Habilidades" },
+];
+---
+
+<header
+  class="sticky top-0 z-50 bg-nuxt-dark/80 backdrop-blur-md border-b border-white/10"
+>
+  <div class="max-w-5xl mx-auto px-6 flex items-center gap-8 py-4">
+    <a
+      href="#"
+      class="flex items-center gap-2 font-bold text-white hover:text-nuxt-green transition-colors shrink-0"
+    >
+      <span
+        class="w-7 h-7 rounded-md bg-nuxt-green/15 border border-nuxt-green/30 flex items-center justify-center text-xs font-bold text-nuxt-green"
+        >FG</span
+      >
+      <span>FerGv</span>
+    </a>
+
+    <nav
+      class="hidden md:flex items-center gap-6 ml-auto"
+      aria-label="Navegación principal"
+    >
+      {
+        navLinks.map(({ href, label }) => (
+          <a
+            href={href}
+            class="text-sm font-medium text-nuxt-muted hover:text-white transition-colors"
+          >
+            {label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <a
+      href="https://fergv.com/files/CV_Fernando_Garc%C3%ADa_(es).pdf"
+      class="ml-auto md:ml-0 inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium border border-white/10 text-slate-200 hover:border-nuxt-green hover:text-nuxt-green transition-all"
+      target="_blank"
+      rel="noopener"
+    >
+      Descargar CV
+    </a>
+  </div>
+</header>
